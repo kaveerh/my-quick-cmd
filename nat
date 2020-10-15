@@ -1,0 +1,3 @@
+sudo iptables -t nat -A POSTROUTING -s 192.168.0.0/16 -o ppp0 -j MASQUERADE
+# -o is the interface that is to be natted to
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE

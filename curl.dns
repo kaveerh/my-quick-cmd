@@ -1,0 +1,3 @@
+curl https://cloudflare-dns.com/dns-query?ct=application/dns-json&name=www.myktt.net&type=A
+curl https://dns.google.com/resolve?name=www.myktt.net&type=a
+curl https://dns.google.com/resolve?name=myktt.net&type=mx

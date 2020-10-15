@@ -1,0 +1,5 @@
+GET / HTTP/1.1
+host: localhost
+
+host:ifconfig.io
+GET / HTTP/1.1

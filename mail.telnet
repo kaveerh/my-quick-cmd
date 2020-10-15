@@ -1,0 +1,24 @@
+helo servername
+mail from: test@example.org
+rcpt to: kaveerharie@gmail.com
+data
+subject: test otp
+bob
+.
+
+##
+MAIL FROM: <test@example.org>
+RCPT TO: <kaveerharie@gmail.com>
+DATA
+Subject: test otp
+bob
+.
+#perl -MMIME::Base64 -e 'print encode_base64("username");'
+#perl -MMIME::Base64 -e 'print encode_base64("password");'
+AUTH LOGIN
+AUTH LOGIN
+334 VXNlcm5hbWU6
+dXNlcm5hbWUuY29t
+334 UGFzc3dvcmQ6
+bXlwYXNzd29yZA==
+235 Authentication succeeded
